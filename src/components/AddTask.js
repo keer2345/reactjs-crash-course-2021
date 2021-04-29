@@ -8,7 +8,7 @@ const AddTask = ({ onAdd }) => {
   const onSubmit = (e) => {
     e.preventDefault()
     if (!text) {
-      alert('Please add a  task')
+      alert('Please add a task')
       return
     }
 
@@ -45,7 +45,7 @@ const AddTask = ({ onAdd }) => {
           type="checkbox"
           checked={reminder}
           value={reminder}
-          onChange={(e) => setReminder(e.target.value)}
+          onChange={(e) => setReminder(e.currentTarget.checked)}
         />
       </div>
 
