@@ -32,6 +32,22 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### json-server
+Add *server* in *scripts* scope of `package.json`:
+``` json
+ "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "json-server --watch db.json --port 5000"
+  },
+```
+Run Json Server:
+```
+yarn server
+```
+
 ### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
